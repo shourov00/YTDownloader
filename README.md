@@ -1,4 +1,4 @@
-## Simple YouTube video downloader
+# Simple YouTube video downloader
 
 This script allows you to download YouTube videos easily using Python.
 
