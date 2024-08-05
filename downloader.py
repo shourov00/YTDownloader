@@ -1,14 +1,13 @@
 import sys
 import time
-
-import pytube
+from pytube import YouTube
 
 start_time = time.time()
 
 
 def download_yt_video(video_url, output_path):
     # get youtube object
-    yt = pytube.YouTube(video_url, on_progress_callback=progress_func, on_complete_callback=completed_function)
+    yt = YouTube(video_url, on_progress_callback=progress_func, on_complete_callback=completed_function)
 
     # get the highest resolution video stream & thumbnail
     stream = yt.streams.get_highest_resolution()

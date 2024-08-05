@@ -52,6 +52,15 @@ python main.py --url "youtube_video_url" -o "C:/Users/my_pc/Downloads"
 python main.py --help
 ```
 
+## Common Issues
+**Issue 1:** __urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)__
+
+### Solution (Mac OS)
+Here are the steps for macOS:
+
+1. Open the folder **/Applications/Python 3.x (x is the version you are running).**
+2. Double click the **Install Certificates.command**. It will open a terminal and install the certificate.
+
 ## Contributing
 If you'd like to contribute to this project, please fork the repository, create a new branch, and make your changes. Afterward, submit a pull request for review.
 
